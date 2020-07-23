@@ -14,7 +14,6 @@
 		A2883E7424C912670047DC4B /* MovieListPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2883E6E24C912670047DC4B /* MovieListPresenterMock.swift */; };
 		A2883E7524C912670047DC4B /* APIHTTPClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2883E6F24C912670047DC4B /* APIHTTPClientMock.swift */; };
 		A2883E7624C912670047DC4B /* MovieListInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2883E7024C912670047DC4B /* MovieListInteractorMock.swift */; };
-		A2883E7924C914D10047DC4B /* Photos.json in Resources */ = {isa = PBXBuildFile; fileRef = A2883E7824C914D10047DC4B /* Photos.json */; };
 		A2883E7E24C9172E0047DC4B /* MovieListBuilderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2883E7B24C9172E0047DC4B /* MovieListBuilderTestCase.swift */; };
 		A2883E7F24C9172E0047DC4B /* MovieListInteractorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2883E7C24C9172E0047DC4B /* MovieListInteractorTestCase.swift */; };
 		A2883E8024C9172E0047DC4B /* MovieListPresenterTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2883E7D24C9172E0047DC4B /* MovieListPresenterTestCase.swift */; };
@@ -109,7 +108,6 @@
 		A2883E6E24C912670047DC4B /* MovieListPresenterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListPresenterMock.swift; sourceTree = "<group>"; };
 		A2883E6F24C912670047DC4B /* APIHTTPClientMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHTTPClientMock.swift; sourceTree = "<group>"; };
 		A2883E7024C912670047DC4B /* MovieListInteractorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListInteractorMock.swift; sourceTree = "<group>"; };
-		A2883E7824C914D10047DC4B /* Photos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Photos.json; sourceTree = "<group>"; };
 		A2883E7B24C9172E0047DC4B /* MovieListBuilderTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListBuilderTestCase.swift; sourceTree = "<group>"; };
 		A2883E7C24C9172E0047DC4B /* MovieListInteractorTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListInteractorTestCase.swift; sourceTree = "<group>"; };
 		A2883E7D24C9172E0047DC4B /* MovieListPresenterTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListPresenterTestCase.swift; sourceTree = "<group>"; };
@@ -234,14 +232,6 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		A2883E7724C914BE0047DC4B /* Stubs */ = {
-			isa = PBXGroup;
-			children = (
-				A2883E7824C914D10047DC4B /* Photos.json */,
-			);
-			path = Stubs;
-			sourceTree = "<group>";
-		};
 		A2883E7A24C9171A0047DC4B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,7 +310,6 @@
 				A2883E7A24C9171A0047DC4B /* Modules */,
 				A2883E8424C9292E0047DC4B /* API */,
 				A2883E8124C9184F0047DC4B /* Extensions */,
-				A2883E7724C914BE0047DC4B /* Stubs */,
 				A2883E6A24C912670047DC4B /* Mocks */,
 				A293C9D224C224F400602793 /* Info.plist */,
 			);
@@ -742,7 +731,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2883E7924C914D10047DC4B /* Photos.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
