@@ -6,12 +6,10 @@ class APIErrorTestCase: XCTestCase {
     var client: APIHTTPClientType!
     
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
         client = APIHTTPClientMock()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         client = nil
     }
     
