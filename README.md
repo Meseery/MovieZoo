@@ -7,6 +7,7 @@ IOS App written using Swift 5.0 with VIPER architecture.
 - iOS 10 and above.
 - Xcode 10.3 and above.
 - Swift 5.0.
+- ZERO third party dependency. 
 
 ## Implemented UserStories
 
