@@ -24,7 +24,7 @@ As a customer, I want to be able to view a list of movies
 As a customer, I want to be able to select a movie and view more details
 `ACCEPTANCE CRITERIA`
 
-- The movie detail page should include the movie title, the year of release, the genre, the cast (if any) and the movie photos fetched from [Flickr API](https://www.flickr.com/services/api/flickr.photos.search.html)
+- The movie detail page should include the movie title, the year of release, the genre, the cast (if any) and the movie photos fetched from [Flickr API](https://www.flickr.com/services/api/flickr.photos.search.html).
 
 ### US-3
 As a customer I want to be able to search for a movie
