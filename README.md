@@ -1,5 +1,7 @@
 # MovieZoo
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=Meseery_MovieZoo)](https://sonarcloud.io/dashboard?id=Meseery_MovieZoo)
+
 IOS App written using Swift 5.0 with VIPER architecture. 
 
 ### Prerequisites
