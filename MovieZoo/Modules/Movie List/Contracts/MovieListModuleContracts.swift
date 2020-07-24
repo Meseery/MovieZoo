@@ -1,4 +1,5 @@
 import Foundation
+import APILayer
 
 protocol MovieListRouterProtocol: class {
     func pushMovieDetailScene(view: MovieListViewProtocol, movie: Movie)

@@ -1,4 +1,5 @@
 import Foundation
+import APILayer
 
 class MovieListInteractor: MovieListInteractorProtocol {
     weak var presenter: MovieListInteractorOutputProtocol?

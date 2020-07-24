@@ -1,4 +1,5 @@
 import XCTest
+import APILayer
 @testable import MovieZoo
 
 class MovieListInteractorOutputMock: MovieListInteractorOutputProtocol {

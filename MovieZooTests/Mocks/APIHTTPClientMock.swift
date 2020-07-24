@@ -1,4 +1,6 @@
 import XCTest
+import APILayer
+
 @testable import MovieZoo
 
 class APIHTTPClientMock: APIHTTPClientType {

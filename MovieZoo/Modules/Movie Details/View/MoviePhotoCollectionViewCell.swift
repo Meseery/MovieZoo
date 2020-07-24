@@ -1,4 +1,5 @@
 import UIKit
+import APILayer
 
 class MoviePhotoCollectionViewCell: UICollectionViewCell {
     
