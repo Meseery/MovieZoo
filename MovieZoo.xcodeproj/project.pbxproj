@@ -10,6 +10,9 @@
 		A21B8DB724CA0F260032A295 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21B8DB624CA0F260032A295 /* EmptyStateView.swift */; };
 		A25E2C5324CBA6C000636CA0 /* APILayer in Frameworks */ = {isa = PBXBuildFile; productRef = A25E2C5224CBA6C000636CA0 /* APILayer */; };
 		A25E2C5624CBA7A500636CA0 /* Photos.json in Resources */ = {isa = PBXBuildFile; fileRef = A25E2C5524CBA7A500636CA0 /* Photos.json */; };
+		A25E2C5924CBC62400636CA0 /* MovieDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E2C5824CBC62400636CA0 /* MovieDetailRequest.swift */; };
+		A25E2C5D24CBC68100636CA0 /* MovieRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E2C5C24CBC68100636CA0 /* MovieRoute.swift */; };
+		A25E2C6024CBC6E800636CA0 /* FlickrAPIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E2C5F24CBC6E800636CA0 /* FlickrAPIConstants.swift */; };
 		A2883E7124C912670047DC4B /* MovieListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2883E6B24C912670047DC4B /* MovieListViewMock.swift */; };
 		A2883E7224C912670047DC4B /* MovieListInteractorOutputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2883E6C24C912670047DC4B /* MovieListInteractorOutputMock.swift */; };
 		A2883E7324C912670047DC4B /* MovieListRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2883E6D24C912670047DC4B /* MovieListRouterMock.swift */; };
@@ -92,6 +95,9 @@
 /* Begin PBXFileReference section */
 		A21B8DB624CA0F260032A295 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		A25E2C5524CBA7A500636CA0 /* Photos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Photos.json; sourceTree = "<group>"; };
+		A25E2C5824CBC62400636CA0 /* MovieDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailRequest.swift; sourceTree = "<group>"; };
+		A25E2C5C24CBC68100636CA0 /* MovieRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRoute.swift; sourceTree = "<group>"; };
+		A25E2C5F24CBC6E800636CA0 /* FlickrAPIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPIConstants.swift; sourceTree = "<group>"; };
 		A2883E6B24C912670047DC4B /* MovieListViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewMock.swift; sourceTree = "<group>"; };
 		A2883E6C24C912670047DC4B /* MovieListInteractorOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListInteractorOutputMock.swift; sourceTree = "<group>"; };
 		A2883E6D24C912670047DC4B /* MovieListRouterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListRouterMock.swift; sourceTree = "<group>"; };
@@ -203,6 +209,40 @@
 				A25E2C5524CBA7A500636CA0 /* Photos.json */,
 			);
 			path = stubs;
+			sourceTree = "<group>";
+		};
+		A25E2C5724CBC61000636CA0 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				A25E2C5E24CBC6CE00636CA0 /* FlickrPhotos */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		A25E2C5A24CBC66C00636CA0 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				A25E2C5C24CBC68100636CA0 /* MovieRoute.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		A25E2C5B24CBC67000636CA0 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				A25E2C5824CBC62400636CA0 /* MovieDetailRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		A25E2C5E24CBC6CE00636CA0 /* FlickrPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				A25E2C5F24CBC6E800636CA0 /* FlickrAPIConstants.swift */,
+				A25E2C5B24CBC67000636CA0 /* Requests */,
+				A25E2C5A24CBC66C00636CA0 /* Routes */,
+			);
+			path = FlickrPhotos;
 			sourceTree = "<group>";
 		};
 		A2883E6A24C912670047DC4B /* Mocks */ = {
@@ -431,6 +471,7 @@
 		A293CA4424C2320D00602793 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
+				A25E2C5724CBC61000636CA0 /* Endpoints */,
 				A293C9ED24C2264000602793 /* Data */,
 				A293CA2F24C2312400602793 /* Extensions */,
 			);
@@ -719,6 +760,7 @@
 				A293CA4224C231E000602793 /* UINavigationBar+Extension.swift in Sources */,
 				A293C9BA24C224F300602793 /* AppDelegate.swift in Sources */,
 				A2D0CDE424C24C78004D388A /* MovieSearchContracts.swift in Sources */,
+				A25E2C5924CBC62400636CA0 /* MovieDetailRequest.swift in Sources */,
 				A2D0CDE624C24C78004D388A /* MovieSearchInteractor.swift in Sources */,
 				A293CA4124C231E000602793 /* UIFont+Extension.swift in Sources */,
 				A2D0CDD724C249F7004D388A /* AppNavigationCordinator.swift in Sources */,
@@ -746,7 +788,9 @@
 				A293CA1824C22D3900602793 /* MovieListRouter.swift in Sources */,
 				A293CA1724C22D3900602793 /* MovieListModuleContracts.swift in Sources */,
 				A2D0CE0C24C3B79F004D388A /* MovieDetailViewController.swift in Sources */,
+				A25E2C5D24CBC68100636CA0 /* MovieRoute.swift in Sources */,
 				A293C9F024C2265300602793 /* Movie.swift in Sources */,
+				A25E2C6024CBC6E800636CA0 /* FlickrAPIConstants.swift in Sources */,
 				A293CA1624C22D3900602793 /* MovieListPresenter.swift in Sources */,
 				A293CA3D24C231E000602793 /* UIButton+Extension.swift in Sources */,
 				A293C9F924C227F800602793 /* Genre.swift in Sources */,
