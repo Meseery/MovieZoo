@@ -24,8 +24,6 @@ class MovieListPresenterMock: MovieListPresenterProtocol {
     
     func viewDidLoad() { loadMovies() }
     
-    func viewWillAppear() {}
-    
     func onMoviesFetchSuccess(movies: [Movie]) {
         movieFetchSuccess = true
         self.movies = movies

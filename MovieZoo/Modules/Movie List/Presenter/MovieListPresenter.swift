@@ -12,8 +12,6 @@ class MovieListPresenter: MovieListPresenterProtocol {
     func viewDidLoad() {
         loadMovieList()
     }
-
-    func viewWillAppear() {}
     
     func movie(at indexPath: IndexPath) -> Movie {
         return movies[indexPath.row]

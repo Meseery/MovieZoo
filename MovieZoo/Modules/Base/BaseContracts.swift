@@ -35,16 +35,10 @@ extension BaseView where Self: BaseUIViewController {
     }
     
     func showAlertSheet(title: String?, msg: String?, actions: [UIAlertAction]) {
-        self.presentAlert(title: title, message: msg, preferredStyle: .actionSheet, actionButtons: actions, dismissOnTap: false)
+        self.presentAlert(title: title, message: msg, preferredStyle: .actionSheet, actionButtons: actions)
     }
     
     func showAlert(title: String?, msg: String?, actions: [UIAlertAction]) {
-        self.presentAlert(title: title, message: msg, preferredStyle: .alert, actionButtons: actions, dismissOnTap: false)
+        self.presentAlert(title: title, message: msg, preferredStyle: .alert, actionButtons: actions)
     }
-}
-
-@objc protocol BasePresenter: class {
-    func viewDidLoad()
-    func viewWillAppear()
-    @objc optional func viewWillDisapper()
 }

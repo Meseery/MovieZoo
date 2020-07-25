@@ -11,11 +11,12 @@ protocol MovieDetailViewProtocol: BaseView {
     func showMovieDetail(viewModel: MovieDetailViewModel)
 }
 
-protocol MovieDetailPresenterProtocol: BasePresenter {
+protocol MovieDetailPresenterProtocol {
     var view: MovieDetailViewProtocol? { get set }
     var interactor: MovieDetailInteractorProtocol? { get set }
     var router: MovieDetailRouterProtocol? { get set }
 
+    func viewDidLoad()
     func viewAllCast()
 }
 

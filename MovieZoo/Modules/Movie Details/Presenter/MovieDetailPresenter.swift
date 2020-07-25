@@ -17,9 +17,6 @@ class MovieDetailPresenter: MovieDetailPresenterProtocol {
         loadMovieDetail()
     }
     
-    func viewWillAppear() {}
-    
-    
     private func loadMovieDetail() {
         view?.showLoading(message: "Loading...")
         interactor?.makeMovieDetailRequest(movieTitle: movie.title)

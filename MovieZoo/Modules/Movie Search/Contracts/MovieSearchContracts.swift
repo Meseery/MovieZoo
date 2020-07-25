@@ -14,7 +14,7 @@ protocol MovieSearchViewProtocol: BaseView {
     func showSearchResults(searchResults: [MovieSearchResult])
 }
 
-protocol MovieSearchPresenterProtocol: BasePresenter {
+protocol MovieSearchPresenterProtocol {
     var view: MovieSearchViewProtocol? { get set }
     var interactor: MovieSearchInteractorProtocol? { get set }
     var router: MovieSearchRouterProtocol? { get set }

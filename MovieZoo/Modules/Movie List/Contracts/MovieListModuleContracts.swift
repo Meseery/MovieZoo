@@ -11,10 +11,12 @@ protocol MovieListViewProtocol: BaseView, BaseUIViewController {
     func showMovieList()
 }
 
-protocol MovieListPresenterProtocol: BasePresenter, MovieListInteractorOutputProtocol {
+protocol MovieListPresenterProtocol: MovieListInteractorOutputProtocol {
     var view: MovieListViewProtocol? { get set }
     var interactor: MovieListInteractorProtocol? { get set }
     var router: MovieListRouterProtocol? { get set }
+    
+    func viewDidLoad()
     
     var moviesCount: Int { get }
     func movie(at indexPath: IndexPath) -> Movie

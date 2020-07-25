@@ -18,12 +18,7 @@ class MovieDetailViewController: BaseUIViewController {
         super.viewDidLoad()
         presenter?.viewDidLoad()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        presenter?.viewWillAppear()
-    }
-    
+
     override func setupUI() {
         moviePhotosCollectionView.delegate = self
         moviePhotosCollectionView.dataSource = self

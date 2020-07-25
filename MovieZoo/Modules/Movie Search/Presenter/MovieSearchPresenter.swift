@@ -5,11 +5,6 @@ class MovieSearchPresenter: MovieSearchPresenterProtocol {
     weak var view: MovieSearchViewProtocol?
     var interactor: MovieSearchInteractorProtocol?
     var router: MovieSearchRouterProtocol?
-        
-    
-    func viewDidLoad() {}
-    
-    func viewWillAppear() {}
     
     func didSearchMovie(searchText: String) {
         interactor?.searchMovie(searchText: searchText)
