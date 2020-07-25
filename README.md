@@ -1,6 +1,6 @@
 # MovieZoo
 
-![.github/workflows/swift.yml](https://github.com/Meseery/MovieZoo/workflows/.github/workflows/swift.yml/badge.svg?branch=master&event=push)
+![MovieZoo CI](https://github.com/Meseery/MovieZoo/workflows/MovieZoo%20CI/badge.svg?branch=master)
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=Meseery_MovieZoo)](https://sonarcloud.io/dashboard?id=Meseery_MovieZoo)
 
