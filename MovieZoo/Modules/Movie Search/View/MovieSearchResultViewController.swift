@@ -76,9 +76,9 @@ extension MovieSearchResultViewController: UICollectionViewDelegate, UICollectio
     
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
-        if let _searchBar = searchBar {
-            _searchBar.text = ""
-            _searchBar.resignFirstResponder()
+        if let searchBar = searchBar {
+            searchBar.text = ""
+            searchBar.resignFirstResponder()
         }
         presenter?.didSelectMovie(at: indexPath)
     }

@@ -12,8 +12,6 @@ class EmptyStateTheme {
     private(set) var descriptionTextColor: UIColor =  UIColor.gray
     private(set) var backgroundColor: UIColor = UIColor.white
     private(set) var roudedCorner: Bool = true
-
-    private init() {}
     
     public static let shared = EmptyStateTheme()
     

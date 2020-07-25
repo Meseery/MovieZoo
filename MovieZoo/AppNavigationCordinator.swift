@@ -23,7 +23,7 @@ class AppNavigationCordinator {
             = UIStoryboard(name: "MovieDetail", bundle: nil)
             .instantiateViewController(withIdentifier: "MovieDetailViewController") as! MovieDetailViewController
 
-        let presenter: MovieDetailPresenterProtocol & MovieDetailInteractorOutputProtocol = MovieDetailPresenter(movie: movie)
+        var presenter: MovieDetailPresenterProtocol & MovieDetailInteractorOutputProtocol = MovieDetailPresenter(movie: movie)
         let interactor: MovieDetailInteractorProtocol = MovieDetailInteractor()
         let router: MovieDetailRouterProtocol = MovieDetailRouter()
 
@@ -39,7 +39,7 @@ class AppNavigationCordinator {
     static func buildSearchMoviesModule() -> UIViewController {
         let viewController = MovieSearchResultViewController()
         
-        let presenter: MovieSearchPresenterProtocol & MovieSearchInteractorOutputProtocol = MovieSearchPresenter()
+        var presenter: MovieSearchPresenterProtocol & MovieSearchInteractorOutputProtocol = MovieSearchPresenter()
         let interactor: MovieSearchInteractorProtocol = MovieSearchInteractor(dataManager: LocalDataManager<[Movie]>())
         let router: MovieSearchRouterProtocol = MovieSearchRouter()
         

@@ -54,8 +54,4 @@ enum EmptyErrorType {
             return image
         }
     }
-    
-    func custom(title: String?, desc: String? = nil, image: UIImage? = nil, buttonAction: String? = nil) -> EmptyErrorType {
-        return .Custom(title: title, desc: desc, image: image, buttonAction: buttonAction)
-    }
 }
