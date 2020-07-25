@@ -5,20 +5,21 @@ import APILayer
 
 class APIHTTPClientMock: APIHTTPClientType {
     func dataTask(urlRequest: URLRequest, completion: @escaping ((Result<Data, APIError>) -> Void)) {
-        switch urlRequest.url?.path {
-        case MovieRoute.movieDetail(title: "Inception").url.path:
+        if urlRequest.url?.path == MovieRoute.movieDetail(title: "Inception").url.path {
             let bundle = Bundle(for: type(of: self))
             let fileUrl = bundle.url(forResource: "Photos", withExtension: "json")!
-            let data = try! Data(contentsOf: fileUrl)
-            completion(Result.success(data))
-            break
-        default:
+            let data = try? Data(contentsOf: fileUrl)
+            completion(Result.success(data ?? Data()))
+        } else {
             completion(Result.failure(APIError.invalidRequestURL(urlRequest.url?.absoluteString ?? "")))
-            break
         }
     }
     
-    func downloadTask(url: String, completion: @escaping ((Result<URL, APIError>) -> Void)) {}
+    func downloadTask(url: String, completion: @escaping ((Result<URL, APIError>) -> Void)) {
+        // Intentionally unimplemented...
+    }
     
-    func cancel() {}
+    func cancel() {
+        // Intentionally unimplemented...
+    }
 }

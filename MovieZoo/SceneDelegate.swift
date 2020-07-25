@@ -13,10 +13,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
-            let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = navigationController
-            self.window = window
-            window.makeKeyAndVisible()
+            let mainWindow = UIWindow(windowScene: windowScene)
+            mainWindow.rootViewController = navigationController
+            self.window = mainWindow
+            mainWindow.makeKeyAndVisible()
             UINavigationBar.applyTheme()
         }
     }

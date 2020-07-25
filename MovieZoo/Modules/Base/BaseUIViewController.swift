@@ -11,9 +11,13 @@ class BaseUIViewController: UIViewController {
         setupUI()
     }
     
-    internal func setupUI() {}
+    internal func setupUI() {
+        // To-Be-Implemented by children views
+    }
     
-    internal func setUITheme() {}
+    internal func setUITheme() {
+        // To-Be-Implemented by children views
+    }
     
     func showLoadingView(msg: String) {
         if #available(iOS 13.0, *) {
